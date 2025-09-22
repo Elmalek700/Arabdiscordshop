@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>🛒 متجر منتجات ديسكورد</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 متجر منتجات ديسكورد</h1>
+    <button onclick="login()">تسجيل الدخول عبر ديسكورد</button>
+  </header>
+
+  <main>
+    <h2>المنتجات المعروضة</h2>
+    <div id="products"></div>
+
+    <div id="addProduct" style="display:none;">
+      <h2>إضافة منتج</h2>
+      <input type="text" id="productName" placeholder="اسم المنتج"><br><br>
+      <input type="text" id="productPrice" placeholder="السعر"><br><br>
+      <input type="file" id="productImage"><br><br>
+      <button onclick="addProduct()">إضافة</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
